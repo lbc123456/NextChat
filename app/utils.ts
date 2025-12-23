@@ -479,3 +479,15 @@ export function semverCompare(a: string, b: string) {
     caseFirst: "upper",
   });
 }
+
+/**
+ * Format a string with garge prefix
+ * @param text - The text to format
+ * @returns Formatted string with garge prefix
+ */
+export function formatGarge(text: string): string {
+  if (!text || typeof text !== "string") {
+    return "";
+  }
+  return `garge: ${text.trim()}`;
+}
